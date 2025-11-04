@@ -1,10 +1,25 @@
 I want to use a bunch of free tiers on various osint platforms to automate osint workflows and probs integrate into my other projects
 
-intelx curl
-curl -H "X-API-Key: YOUR_API_KEY" "https://api.intelligencex.example/email?address=user@example.com" 
+ curl -H "X-API-Key: YOUR_API_KEY" "https://api.intelligencex.example/email?address=user@example.com" 
 
-shodan curl
-curl -sS "https://api.shodan.io/shodan/host/8.8.8.8?key=YOUR_SHODAN_API_KEY"
+ curl -sS "https://api.shodan.io/shodan/host/8.8.8.8?key=YOUR_SHODAN_API_KEY"
 
-hunter curl
-curl -sS "https://api.hunter.io/v2/domain-search?domain=example.com&api_key=YOUR_HUNTER_API_KEY"
+ curl -sS "https://api.hunter.io/v2/domain-search?domain=example.com&api_key=YOUR_HUNTER_API_KEY"
+
+curl -s "http://ip-api.com/json/8.8.8.8"
+
+curl -s "https://ipinfo.io/8.8.8.8/json?token=${IPINFO_KEY}"
+
+curl -s -H 'Accept: application/dns-json' \
+  "https://cloudflare-dns.com/dns-query?name=example.com&type=TXT"
+
+curl -s "https://crt.sh/?q=%25example.com&output=json"
+
+curl -s "https://archive.org/wayback/available?url=https://example.com"
+
+curl -s -H "Accept: application/json" \
+  -H "Authorization: Bearer ${CENSYS_API_TOKEN}" \
+  "https://search.censys.io/api/v2/hosts/8.8.8.8"
+
+
+
