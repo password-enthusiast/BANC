@@ -1,5 +1,8 @@
 I want to use a bunch of free tiers on various osint platforms to automate osint workflows and probs integrate into my other projects
 
+
+https://www.google.com/search?q=inurl%3Adomain.tld%2Fpath+intext%3Akeyword+intitle%3Akeyword
+
  curl -H "X-API-Key: YOUR_API_KEY" "https://api.intelligencex.example/email?address=user@example.com" 
 
  curl -sS "https://api.shodan.io/shodan/host/8.8.8.8?key=YOUR_SHODAN_API_KEY"
